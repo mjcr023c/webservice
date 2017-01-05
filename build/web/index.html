@@ -14,7 +14,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <div>Hora</div>
+            <div>Hora (Serlet)</div>
             <input type="text" name="hora" value="9999">
             <button id='enviaHora' onclick="convertHora()">Enviar</button> 
             <br>
@@ -23,13 +23,33 @@ and open the template in the editor.
         </div>
         <br>
         <br>
+                <div>
+            <div>Hora (REST)</div>
+            <input type="text" name="hora2" value="9999">
+            <button id='enviaHora2' onclick="convertHoraRest()">Enviar</button> 
+            <br>
+            <br>
+            <div id="respuestaHora2"></div>
+        </div>
+        <br>
+        <br>
         <div>
-            <div>Palabra</div>
+            <div>Palabra (Servlet)</div>
             <input type="text" name="palabra" value="hola">
             <button id='enviaPalabra' onclick="convertMayusculas()">Enviar</button> 
             <br>
             <br>
             <div id="respuestaPalabra"></div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div>Palabra (REST)</div>
+            <input type="text" name="palabra2" value="hola">
+            <button id='enviaPalabra2' onclick="convertMayusculasRest()">Enviar</button> 
+            <br>
+            <br>
+            <div id="respuestaPalabra2"></div>
         </div>
     </body>
 </html>
