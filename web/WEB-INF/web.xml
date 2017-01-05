@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>prueba</servlet-name>
+        <servlet-class>servicios.prueba</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>time</servlet-name>
+        <servlet-class>servicios.time</servlet-class>
+        <init-param>
+            <param-name>hora</param-name>
+            <param-value>long</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>word</servlet-name>
+        <servlet-class>servicios.word</servlet-class>
+        <init-param>
+            <param-name>palabra</param-name>
+            <param-value>String</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>prueba</servlet-name>
+        <url-pattern>/prueba</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>time</servlet-name>
+        <url-pattern>/time</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>word</servlet-name>
+        <url-pattern>/word</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
