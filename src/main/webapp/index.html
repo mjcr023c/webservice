@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="./webjars/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./webjars/bootstrap/3.3.1/css/bootstrap.min.css">
+        <script src="./webjars/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="resources/js/scripts.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Webservices</a>
+                </div>
+                <p class="navbar-text navbar-right">by <a href="#" class="navbar-link">mjcr023c</a></p>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div  class="col-md-6 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Hora (Servlet)</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <input class="form-control" type="text" name="hora" value="9999">
+                                <button class="btn btn-primary" id='enviaHora' onclick="convertHora()">Enviar</button> 
+                            </div>
+                        </div>
+                        <div class="panel-footer" id="respuestaHora">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div  class="col-md-6 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Hora (REST)</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <input class="form-control"  type="text" name="hora2" value="9999">
+                                <button class="btn btn-primary" id='enviaHora2' onclick="convertHoraRest()">Enviar</button> 
+                            </div>
+                        </div>
+                        <div class="panel-footer" id="respuestaHora2">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div  class="col-md-6 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Palabra (Servlet)</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <input class="form-control"  type="text" name="palabra" value="hola">
+                                <button class="btn btn-primary" id='enviaPalabra' onclick="convertMayusculas()">Enviar</button> 
+                            </div>
+                        </div>
+                        <div class="panel-footer"  id="respuestaPalabra">&nbsp;</div>
+                    </div>
+                </div>
+                <div  class="col-md-6 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Palabra (REST)</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <input class="form-control"  type="text" name="palabra2" value="hola">
+                                <button class="btn btn-primary" id='enviaPalabra2' onclick="convertMayusculasRest()">Enviar</button> 
+                            </div>
+                        </div>
+                        <div class="panel-footer" id="respuestaPalabra2">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
