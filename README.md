@@ -11,6 +11,7 @@ Technologies:
 - CSS
 - JavaScript
 - JQuery
+- Ajax
 - Bootstrap
 - Json
 ```
