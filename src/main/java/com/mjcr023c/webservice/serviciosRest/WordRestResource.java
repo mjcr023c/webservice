@@ -6,12 +6,14 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import com.mjcr023c.webservice.utilitarios.convierteMinAMay;
+import javax.ws.rs.Produces;
 
 @Stateless
 @Path("/word/{palabra}")
 public class WordRestResource {
 
     @GET
+    @Produces("text/html")
     public String convertir(@PathParam("palabra") String palabra) {
         convierteMinAMay p = new convierteMinAMay();
         String palabraMayuscula = p.convierteaMayuscula(palabra);

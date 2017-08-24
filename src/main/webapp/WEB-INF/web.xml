@@ -16,7 +16,7 @@
     </servlet>
     <servlet>
         <servlet-name>time</servlet-name>
-        <servlet-class>servicios.time</servlet-class>
+        <servlet-class>com.mjcr023c.webservice.servicios.time</servlet-class>
         <init-param>
             <param-name>hora</param-name>
             <param-value>long</param-value>
@@ -24,7 +24,7 @@
     </servlet>
     <servlet>
         <servlet-name>word</servlet-name>
-        <servlet-class>servicios.word</servlet-class>
+        <servlet-class>com.mjcr023c.webservice.servicios.word</servlet-class>
         <init-param>
             <param-name>palabra</param-name>
             <param-value>String</param-value>
